@@ -347,6 +347,58 @@ class UiExample extends StatelessWidget {
                     ],
                   ),
                 ),
+                // ListTile Example
+                Card(
+                  elevation: 1,
+                  shadowColor: Colors.black54,
+                  child: ListTile(
+                    leading: Image.network(
+                      "https://plus.unsplash.com/premium_photo-1744967143306-0ec5b49ca2eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
+                    ),
+                    title: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      spacing: 5,
+                      children: [
+                        Text(
+                          "JC Residency",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        Text(
+                          "Gaindakot, Nawalpur",
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.grey.shade600,
+                          ),
+                        ),
+                      ],
+                    ),
+                    trailing: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: 20,
+                          height: 20,
+                          decoration: BoxDecoration(
+                            color: Colors.grey.shade200,
+                            shape: BoxShape.circle,
+                          ),
+                          child: Icon(
+                            Icons.favorite_border,
+                            color: Colors.red,
+                            size: 18,
+                          ),
+                        ),
+                        Text(
+                          "4.3",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                )
               ],
             ),
           ),
